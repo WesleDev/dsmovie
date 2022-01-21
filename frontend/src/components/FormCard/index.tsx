@@ -15,7 +15,7 @@ export default function FormCard({ movieId }: Props) {
   const [movie, setMovie] = useState<Movie>();
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/movies/${movieId}`).then((response) => {
+    axios.get(`${BASE_URL}/movies/${movieId}&sort=id`).then((response) => {
       setMovie(response.data);
     });
   }, [movieId]);
