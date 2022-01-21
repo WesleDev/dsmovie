@@ -75,7 +75,9 @@ export default function FormCard({ movieId }: Props) {
           </div>
         </form>
         <Link to='/'>
-          <button className='btn btn-primary dsmovie-btn mt-3'>Cancelar</button>
+          <button className='btn btn-danger dsmovie-btn-cancel mt-3'>
+            Cancelar
+          </button>
         </Link>
       </div>
     </div>
